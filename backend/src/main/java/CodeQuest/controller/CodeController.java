@@ -13,7 +13,9 @@ import CodeQuest.service.CodeExecutionService;
 @RequestMapping("/api/code")
 @CrossOrigin(origins = {
     "http://localhost:5173",
-    "https://code-quest-virid-five.vercel.app"
+    "https://code-quest-virid-five.vercel.app",
+    "https://code-quest-sound17.vercel.app",
+    "https://code-quest-4pwx70dza-sound17.vercel.app"
 })
 
 public class CodeController {

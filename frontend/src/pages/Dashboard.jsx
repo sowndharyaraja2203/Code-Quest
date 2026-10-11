@@ -21,7 +21,7 @@ function Dashboard() {
       localStorage.getItem("userEmail");
 
     fetch(
-      `http://localhost:8080/api/dashboard/${userEmail}`
+       `https://codequest-backend-0ayl.onrender.com/api/dashboard/${userEmail}`
     )
       .then((response) => response.json())
       .then((data) => {

@@ -15,7 +15,10 @@ import CodeQuest.repository.UserRepository;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://code-quest-virid-five.vercel.app"
+})
 public class AuthController {
 
     private final UserRepository userRepository;

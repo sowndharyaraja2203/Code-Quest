@@ -145,7 +145,7 @@ const runCode = async () => {
 
   try {
     const response = await fetch(
-      "http://localhost:8080/api/code/run",
+      "https://codequest-backend-0ayl.onrender.com/api/code/run",
       {
         method: "POST",
         headers: {
@@ -178,7 +178,7 @@ const runCode = async () => {
 
   try {
     const response = await fetch(
-      "http://localhost:8080/api/code/submit",
+      "https://codequest-backend-0ayl.onrender.com/api/code/submit",
       {
         method: "POST",
         headers: {

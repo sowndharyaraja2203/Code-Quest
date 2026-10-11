@@ -17,7 +17,12 @@ import CodeQuest.repository.SubmissionRepository;
 
 @RestController
 @RequestMapping("/api/submissions")
-@CrossOrigin(origins = "http://localhost:5173")
+
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://code-quest-virid-five.vercel.app"
+})
+
 public class SubmissionController {
 
     private final SubmissionRepository submissionRepository;

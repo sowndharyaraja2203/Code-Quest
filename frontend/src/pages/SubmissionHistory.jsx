@@ -8,8 +8,8 @@ function SubmissionHistory() {
   const userEmail = localStorage.getItem("userEmail");
 
   fetch(
-    `http://localhost:8080/api/submissions/user/${userEmail}`
-  )
+  `https://codequest-backend-0ayl.onrender.com/api/submissions/user/${encodeURIComponent(userEmail)}`
+)
       .then((response) => response.json())
       .then((data) => {
         setSubmissions(data);

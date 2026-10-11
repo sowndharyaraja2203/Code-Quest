@@ -37,7 +37,7 @@ function Register() {
     try {
 
       const response = await fetch(
-        "http://localhost:8080/api/auth/register",
+        "https://codequest-backend-0ayl.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {
